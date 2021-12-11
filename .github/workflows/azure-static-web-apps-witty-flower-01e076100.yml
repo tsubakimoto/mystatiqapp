@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Output
-        run: dotnet run --output output
+        run: dotnet run -- deploy
       # 追加 ここまで
       - name: Deploy
         id: builddeploy
